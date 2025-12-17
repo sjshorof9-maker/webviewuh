@@ -1,0 +1,19 @@
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'com.web2app.ai'
+    compileSdk 33
+    defaultConfig {
+        applicationId "com.web2app.ai"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+        }
+    }
+}
